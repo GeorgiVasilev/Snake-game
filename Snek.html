@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Snake game</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div id="overlay">
+				Your final Score: <span id="finalScore"></span>
+				<br />
+				<a onclick="$('#overlay').fadeOut(300); init();" href="#">Click To Play Again</a>
+			</div>
+			<div id="pauseDisplay">Game Paused</div>
+			<div id="gameMenu">
+				<a onclick="gameStart(300)">Easy</a>
+				<a onclick="gameStart(200)">Normal</a>
+				<a onclick="gameStart(100)">Hard</a>
+			</div>
+			<canvas id="canvas" width="600" height="450">
+				Sorry this browser does not support the canvas element
+			</canvas>
+			<div id="stats">
+				<div id="score"></div>
+				<div id="highScore"></div>
+				<button onclick="resetScore()" id="resetScore">Reset High Score</button>
+				<button onclick="window.location.reload()" id="restartBtn">Restart Game</button>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

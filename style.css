@@ -1,0 +1,84 @@
+body{
+	background: black url("snek.jpg") no-repeat top center;
+	font-family: arial;
+	background-size: cover;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+canvas{
+	background: black;
+	border: 1px solid lightgray;
+}
+.container{
+	margin: 30px auto 0 auto;
+	width: 600px;
+	position: relative;
+}
+#stats{
+	width: 590px;
+	background: #333333;
+	padding: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 5px;
+	overflow: auto;
+}
+#score, #highScore{
+	width: 25%;
+	height: 50px;
+	padding-top: 20px;
+	float: left;
+	margin-right: 5px;
+	background: black;
+	text-align: center;
+}
+#resetScore{
+	padding: 10px;
+	float: right;
+	cursor:pointer;
+}
+#restartBtn{
+	padding: 10px;
+	margin-left: 20px;
+	cursor:pointer;
+}
+#overlay{
+	display: none;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	position: absolute;
+	top: 170px;
+	left: 180px;
+}
+#gameMenu{
+	display: block;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	position: absolute;
+	top: 120px;
+	left: 230px;
+
+}
+#overlay a, #gameMenu a{
+	display: block;
+	margin-top: 10px;
+	padding: 10px;
+	background: #666666;
+}
+#overlay a:hover,#gameMenu a:hover{
+	background: #333333;
+	cursor:pointer;
+}
+#pauseDisplay{
+	position: absolute;
+	top: 180px;
+	left: 220px;
+	color: white;
+	font-size: 25px;
+	display: none;
+}
